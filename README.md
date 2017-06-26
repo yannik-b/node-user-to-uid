@@ -1,21 +1,21 @@
-# node-uid-to-user
+# node-user-to-uid
 
-NPM module to convert an uid into an username
+NPM module to convert an UNIX-username into an uid
 
 ## Install
 
 ```shell
-npm install uid-to-user
+npm install user-to-uid
 ```
 
 ## Usage
 
 ```javascript
-const uidToUser = require('./app');
+const userToUid = require('user-to-uid');
 
-uidToUser(0)
-  .then((username) => {
-    console.log(username);
+uidToUser('root')
+  .then((uid) => {
+    console.log(uid);
   })
   .catch((err) => {
     console.error(err);
